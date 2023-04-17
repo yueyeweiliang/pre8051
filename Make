@@ -1,0 +1,1 @@
+verilog all.v alu_src1_sel.v alu_src2_sel.v alu_src3_sel.v alu.v decoder.v divide.v immediate_sel.v multiply.v op_select.v pc.v tb_all.v reg8.v reg2.v reg1.v reg4.v ram_wr_sel.v ram_rd_sel.v ram.v acc.v comp.v sp.v rom.v dptr.v cy_select.v psw.v IndiAddr.v reg5.v rom_addr_sel.v ext_addr_sel.v reg3.v ram_sel.v port_out.v

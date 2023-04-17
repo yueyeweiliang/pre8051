@@ -1,0 +1,5 @@
+# Reading D:/Program Files/ModelSim/win32/../tcl/vsim/pref.tcl 
+# vsim {C:\DOCUME~1\Owner\×ÀÃæ\8051CO~1\Rom.v} 
+# ** Error: (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
