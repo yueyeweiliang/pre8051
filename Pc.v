@@ -76,14 +76,14 @@ reg [15:0] pc;
 
 //
 // wr_lo        write low: used in reti instruction, write only low byte of pc
-// ini_buff     interrupt buffer: used to prevent interrupting in the middle of executin instructions
+// int_buff     interrupt buffer: used to prevent interrupting in the middle of executin instructions
 reg wr_lo, int_buff;
 
 always @(pc or op1 or rst or rd)
 begin
   if (rst) begin
 //
-// in cae of reset read value from buffer
+// in case of reset read value from buffer???
     pc_out= pc;
   end else begin
     if (int_buff)
@@ -185,7 +185,7 @@ always @(posedge clk)
 begin
   if (rst)
     pc <= #1 `RST_PC;
-  else if (wr_lo)
+  else if (wr_lo)//reti
     pc[7:0] <= #1 alu[15:8];
   else begin
     if (wr) begin
