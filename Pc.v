@@ -83,7 +83,7 @@ always @(pc or op1 or rst or rd)
 begin
   if (rst) begin
 //
-// in case of reset read value from buffer???
+// in case of reset read value from buffer
     pc_out= pc;
   end else begin
     if (int_buff)
